@@ -180,10 +180,10 @@ class countryObj{
         stroke(color(this.totalRank, this.totalRank*3, this.totalRank*10));
         fill(255);
         //Give some motion to the visualization
+        /*
         if(!this.viewing){
             this.wiggle();
-        }
-        //this.wiggle();
+        }*/
         ellipse(this.x, this.y, this.size, this.size);
     }
 
