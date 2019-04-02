@@ -11,4 +11,4 @@ For my visualization, I originally thought about creating a map of the world and
 
 The bubbles are arranged in a partly random and partly organized manner.  Along the x-axis (horizontal), the bubble's locations are randomly assigned, with the only requirement being that they do not overlap with one another.  However, along the y-axis (vertical), the bubbles that are larger (larger bubbles are countries with larger total alcohol consumptions per capita from 2010-2016) are found further down the screen.  This helps to add depth to my visualization, as the smaller bubbles appear to disappear deep into the screen.  I also created a color gradient for each bubble's stroke (larger bubbles having lighter strokes) which was added for aesthetic affect.  Images of my sketch are seen above, and a link to the full sketch can be found below!
 
-[Here's a link to the piece](https://ryanab702.github.io/DataVisualization1/)
+[Here's a link to the piece](https://ryanab702.github.io/DataVisualization/)
