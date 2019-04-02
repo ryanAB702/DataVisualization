@@ -126,12 +126,12 @@ function loadData(){
                 var tempY = tot * (0.008*windowHeight);
                 var newC = new countryObj(prevCountry, tot, beer, wine, spirit, other, tempX, tempY);
                 // If random tempX overlaps with another countryObj -- re-select random until no overlaps
-                /*
+                
                 while(checkOverlap(newC)){
                     var tx = random(50, windowWidth-50)
                     newC.x = tx;
                     newC.ogX = tx;
-                }*/
+                }
                 //Push countryObj to overall countryList to be displayed later
                 countryList.push(newC);
             }
