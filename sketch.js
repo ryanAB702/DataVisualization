@@ -55,7 +55,7 @@ function Animation1(){
         textSize(75);
         fill(255);
         text("Alcohol Consumption by Country", windowWidth/2, windowHeight/2 - 100);
-        textSize(25);
+        textSize(50);
         text("By: Ryan Bloom", windowWidth/2, windowHeight/2 + 50);
         textSize(20);
         text("(click the mouse to continue...)", windowWidth/2, windowHeight/2 + 300);
