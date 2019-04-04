@@ -58,7 +58,7 @@ function Animation1(){
         textSize(25);
         text("By: Ryan Bloom", windowWidth/2, windowHeight/2 + 50);
         textSize(20);
-        text("(click the mouse to continue...)", windowWidth/2, windowHeight/2 + 400);
+        text("(click the mouse to continue...)", windowWidth/2, windowHeight/2 + 300);
     }
     //Move to next animation when mouse is clicked
     this.mousePressed = function(){
@@ -78,7 +78,7 @@ function Animation2(){
         text("Numbers represent liters of alcohol consumed per capita from 2010-2016...", windowWidth/2, windowHeight/2 + 75);
         text("Hover over the bubbles to learn more!", windowWidth/2, windowHeight/2 + 175);
         textSize(20);
-        text("(click the mouse to visualize!)", windowWidth/2, windowHeight/2 + 400);
+        text("(click the mouse to visualize!)", windowWidth/2, windowHeight/2 + 300);
         strokeWeight(5);
         stroke(50, 150, 255);
         ellipse(windowWidth/2, windowHeight/2 - 35, 100, 100);
@@ -283,7 +283,7 @@ class countryObj{
     //Display images for alcohol types as well as data information upon hovering
     displayDeets(){
         //var ranks = [];
-        textSize(this.size/10);
+        textSize(this.size/15);
         textFont("Acme");
         strokeWeight(3);
         stroke(255);
