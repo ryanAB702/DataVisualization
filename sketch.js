@@ -58,7 +58,7 @@ function Animation1(){
         textSize(25);
         text("By: Ryan Bloom", windowWidth/2, windowHeight/2 + 50);
         textSize(15);
-        text("(click the mouse to continue...)", windowWidth/2, windowHeight/2 + 350);
+        text("(click the mouse to continue...)", windowWidth/2, windowHeight - 100);
     }
     //Move to next animation when mouse is clicked
     this.mousePressed = function(){
@@ -78,7 +78,7 @@ function Animation2(){
         text("Numbers represent liters of alcohol consumed per capita from 2010-2016...", windowWidth/2, windowHeight/2 + 75);
         text("Hover over the bubbles to learn more!", windowWidth/2, windowHeight/2 + 175);
         textSize(15);
-        text("(click the mouse to visualize!)", windowWidth/2, windowHeight/2 + 350);
+        text("(click the mouse to visualize!)", windowWidth/2, windowHeight - 100);
         strokeWeight(5);
         stroke(50, 150, 255);
         ellipse(windowWidth/2, windowHeight/2 - 35, 100, 100);
@@ -175,7 +175,7 @@ class countryObj{
             this.size = tempTotal*2;
         }
         else{
-            this.size = tempTotal * 0.75;
+            this.size = tempTotal * 0.85;
         }
         
         //vewing = true when hover by mouse; used to display details
