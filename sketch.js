@@ -8,6 +8,11 @@ let other;
 let totIntake;
 let mgr;
 
+//Fix scale for github
+//Yellow background for beer maybe?
+//Search for a country
+
+
 //Load all images that will be used at some point in the sketch 
 function preload(){
     table = loadTable("data/alcohol_consumption_data.csv", "header"); //header tells p5 that there is a header line in the csv
@@ -47,12 +52,12 @@ function mousePressed(){
 function Animation1(){
     this.draw = function(){
         background(0);
-        textSize(100);
+        textSize(75);
         fill(255);
         text("Alcohol Consumption by Country", windowWidth/2, windowHeight/2 - 100);
-        textSize(50);
+        textSize(25);
         text("By: Ryan Bloom", windowWidth/2, windowHeight/2 + 50);
-        textSize(30);
+        textSize(15);
         text("(click the mouse to continue...)", windowWidth/2, windowHeight/2 + 450);
     }
     //Move to next animation when mouse is clicked
@@ -65,14 +70,14 @@ function Animation1(){
 function Animation2(){
     this.draw = function(){
         background(0);
-        textSize(100);
+        textSize(75);
         fill(255);
         stroke(0);
         text("Each bubble represents a country...", windowWidth/2, windowHeight/2 - 150);
-        textSize(75);
+        textSize(50);
         text("Numbers represent liters of alcohol consumed per capita from 2010-2016...", windowWidth/2, windowHeight/2 + 75);
         text("Hover over the bubbles to learn more!", windowWidth/2, windowHeight/2 + 175);
-        textSize(30);
+        textSize(15);
         text("(click the mouse to visualize!)", windowWidth/2, windowHeight/2 + 450);
         strokeWeight(5);
         stroke(50, 150, 255);
@@ -127,12 +132,12 @@ function loadData(){
                 var newC = new countryObj(prevCountry, tot, beer, wine, spirit, other, tempX, tempY);
                 // If random tempX overlaps with another countryObj -- re-select random until no overlaps
                 
-                /*
+                
                 while(checkOverlap(newC)){
                     var tx = random(50, windowWidth-50)
                     newC.x = tx;
                     newC.ogX = tx;
-                }*/
+                }
 
                 //Push countryObj to overall countryList to be displayed later
                 countryList.push(newC);
@@ -167,10 +172,10 @@ class countryObj{
         
         //Set ellipse size based on total rank (scale up the tiny ones so they can be seen)
         if(tempTotal < 20){
-            this.size = tempTotal*5;
+            this.size = tempTotal*2;
         }
         else{
-            this.size = tempTotal;
+            this.size = tempTotal * 0.75;
         }
         
         //vewing = true when hover by mouse; used to display details
@@ -179,7 +184,7 @@ class countryObj{
 
     display(){
         //Display the country bubble with color and size based on toatlRank
-        strokeWeight(7);
+        strokeWeight(5);
         stroke(color(this.totalRank, this.totalRank*3, this.totalRank*10));
         fill(255);
         //Give some motion to the visualization
@@ -208,7 +213,7 @@ class countryObj{
         var step = 30;
         var size = this.size;
         //Only grow if hovering and not already grown (<900)
-        if(this.infoHover() && size < 900){
+        if(this.infoHover() && size < 700){
             var dex = countryList.indexOf(this);
             //Need this splice/push so that hovering country always displays on top of all other bubbles
             countryList.splice(dex,1);
