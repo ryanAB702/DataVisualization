@@ -283,7 +283,7 @@ class countryObj{
     //Display images for alcohol types as well as data information upon hovering
     displayDeets(){
         //var ranks = [];
-        textSize(this.size/15);
+        textSize(this.size/11);
         textFont("Acme");
         strokeWeight(3);
         stroke(255);
@@ -292,28 +292,28 @@ class countryObj{
         text(this.name, this.x, this.y-300);
         
         stroke(color(this.totalRank, this.totalRank*3, this.totalRank*10));
-        line(this.x - this.size/2 + 130, this.y - 275,this.x + this.size/2 - 130, this.y - 275);
+        line(this.x - this.size/2 + 105, this.y - 250,this.x + this.size/2 - 105, this.y - 250);
         
-        textSize(this.size/20);
+        textSize(this.size/15);
         textFont("Germania One");
-        image(beer, this.x-300, this.y-250, this.size/9, this.size/9);
-        line(this.x - this.size/2 + 30, this.y - 135,this.x + this.size/2 - 30, this.y - 135);
-        text("Beer - " + this.beerRank, this.x, this.y-250)
+        image(beer, this.x-235, this.y-200, this.size/9, this.size/9);
+        line(this.x - this.size/2 + 28, this.y - 140,this.x + this.size/2 - 28, this.y - 140);
+        text("Beer - " + this.beerRank, this.x, this.y-200)
 
-        image(wine, this.x-375, this.y-100, this.size/10, this.size/7);
-        line(this.x - this.size/2 + 2, this.y + 15,this.x + this.size/2 - 2, this.y + 15);
-        text("Wine - " + this.wineRank, this.x, this.y-100);
+        image(wine, this.x-300, this.y-75, this.size/10, this.size/7);
+        line(this.x - this.size/2 + 2, this.y - 10,this.x + this.size/2 - 2, this.y -10);
+        text("Wine - " + this.wineRank, this.x, this.y-75);
 
-        image(spirits, this.x-375, this.y+50, this.size/9, this.size/9);
-        line(this.x - this.size/2 + 43, this.y + 167,this.x + this.size/2 - 43, this.y + 167);
-        text("Spirits - " + this.spirtRank, this.x, this.y+50);
+        image(spirits, this.x-300, this.y+40, this.size/9, this.size/9);
+        line(this.x - this.size/2 + 15, this.y + 95,this.x + this.size/2 - 15, this.y + 95);
+        text("Spirits - " + this.spirtRank, this.x, this.y+40);
 
-        image(other, this.x-325, this.y+200, this.size/10, this.size/7);
-        line(this.x - this.size/2 + 125, this.y + 273,this.x + this.size/2 - 125, this.y + 273);
-        text("Other - " + this.otherRank, this.x, this.y + 200);
+        image(other, this.x-250, this.y+155, this.size/10, this.size/7);
+        line(this.x - this.size/2 + 77, this.y + 220,this.x + this.size/2 - 77, this.y + 220);
+        text("Other - " + this.otherRank, this.x, this.y + 155);
 
-        image(totIntake, this.x-200, this.y+340, this.size/6.5, this.size/6.5);
-        text("Total - " + this.totalRank, this.x, this.y + 360);
+        image(totIntake, this.x-150, this.y+275, this.size/6.5, this.size/6.5);
+        text("Total - " + this.totalRank, this.x, this.y + 275);
     }
 }
 
