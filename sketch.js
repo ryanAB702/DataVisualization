@@ -292,24 +292,24 @@ class countryObj{
         text(this.name, this.x, this.y-300);
         
         stroke(color(this.totalRank, this.totalRank*3, this.totalRank*10));
-        line(this.x - this.size/2 + 138, this.y - 325,this.x + this.size/2 - 138, this.y - 325);
+        line(this.x - this.size/2 + 130, this.y - 275,this.x + this.size/2 - 130, this.y - 275);
         
         textSize(this.size/20);
         textFont("Germania One");
         image(beer, this.x-300, this.y-250, this.size/9, this.size/9);
-        line(this.x - this.size/2 + 40, this.y - 185,this.x + this.size/2 - 40, this.y - 185);
+        line(this.x - this.size/2 + 30, this.y - 135,this.x + this.size/2 - 30, this.y - 135);
         text("Beer - " + this.beerRank, this.x, this.y-250)
 
         image(wine, this.x-375, this.y-100, this.size/10, this.size/7);
-        line(this.x - this.size/2 + 2, this.y - 15,this.x + this.size/2 - 2, this.y - 15);
+        line(this.x - this.size/2 + 2, this.y + 15,this.x + this.size/2 - 2, this.y + 15);
         text("Wine - " + this.wineRank, this.x, this.y-100);
 
         image(spirits, this.x-375, this.y+50, this.size/9, this.size/9);
-        line(this.x - this.size/2 + 20, this.y + 117,this.x + this.size/2 - 20, this.y + 117);
+        line(this.x - this.size/2 + 43, this.y + 167,this.x + this.size/2 - 43, this.y + 167);
         text("Spirits - " + this.spirtRank, this.x, this.y+50);
 
         image(other, this.x-325, this.y+200, this.size/10, this.size/7);
-        line(this.x - this.size/2 + 90, this.y + 273,this.x + this.size/2 - 90, this.y + 273);
+        line(this.x - this.size/2 + 125, this.y + 273,this.x + this.size/2 - 125, this.y + 273);
         text("Other - " + this.otherRank, this.x, this.y + 200);
 
         image(totIntake, this.x-200, this.y+340, this.size/6.5, this.size/6.5);
