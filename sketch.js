@@ -283,7 +283,7 @@ class countryObj{
     //Display images for alcohol types as well as data information upon hovering
     displayDeets(){
         //var ranks = [];
-        textSize(this.size/12);
+        textSize(this.size/10);
         textFont("Acme");
         strokeWeight(3);
         stroke(255);
@@ -294,7 +294,7 @@ class countryObj{
         stroke(color(this.totalRank, this.totalRank*3, this.totalRank*10));
         line(this.x - this.size/2 + 138, this.y - 325,this.x + this.size/2 - 138, this.y - 325);
         
-        textSize(this.size/22);
+        textSize(this.size/20);
         textFont("Germania One");
         image(beer, this.x-300, this.y-250, this.size/9, this.size/9);
         line(this.x - this.size/2 + 40, this.y - 185,this.x + this.size/2 - 40, this.y - 185);
