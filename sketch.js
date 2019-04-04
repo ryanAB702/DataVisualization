@@ -283,7 +283,7 @@ class countryObj{
     //Display images for alcohol types as well as data information upon hovering
     displayDeets(){
         //var ranks = [];
-        textSize(this.size/11);
+        textSize(this.size/10);
         textFont("Acme");
         strokeWeight(3);
         stroke(255);
