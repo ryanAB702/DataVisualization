@@ -296,11 +296,11 @@ class countryObj{
         
         textSize(this.size/15);
         textFont("Germania One");
-        image(beer, this.x-230, this.y-200, this.size/9, this.size/9);
+        image(beer, this.x-227, this.y-200, this.size/9, this.size/9);
         line(this.x - this.size/2 + 28, this.y - 140,this.x + this.size/2 - 28, this.y - 140);
         text("Beer - " + this.beerRank, this.x, this.y-200)
 
-        image(wine, this.x-300, this.y-75, this.size/10, this.size/7);
+        image(wine, this.x-297, this.y-75, this.size/10, this.size/7);
         line(this.x - this.size/2 + 2, this.y - 10,this.x + this.size/2 - 2, this.y -10);
         text("Wine - " + this.wineRank, this.x, this.y-75);
 
