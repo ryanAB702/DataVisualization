@@ -58,7 +58,7 @@ function Animation1(){
         textSize(25);
         text("By: Ryan Bloom", windowWidth/2, windowHeight/2 + 50);
         textSize(20);
-        text("(click the mouse to continue...2)", windowWidth/2, windowHeight/2 + 300);
+        text("(click the mouse to continue...)", windowWidth/2, windowHeight/2 + 300);
     }
     //Move to next animation when mouse is clicked
     this.mousePressed = function(){
@@ -292,11 +292,11 @@ class countryObj{
         text(this.name, this.x, this.y-300);
         
         stroke(color(this.totalRank, this.totalRank*3, this.totalRank*10));
-        line(this.x - this.size/2 + 105, this.y - 250,this.x + this.size/2 - 105, this.y - 250);
+        line(this.x - this.size/2 + 100, this.y - 250,this.x + this.size/2 - 100, this.y - 250);
         
         textSize(this.size/15);
         textFont("Germania One");
-        image(beer, this.x-235, this.y-200, this.size/9, this.size/9);
+        image(beer, this.x-230, this.y-200, this.size/9, this.size/9);
         line(this.x - this.size/2 + 28, this.y - 140,this.x + this.size/2 - 28, this.y - 140);
         text("Beer - " + this.beerRank, this.x, this.y-200)
 
